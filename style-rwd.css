@@ -1,0 +1,317 @@
+/* RWD_mobile_default */
+/* universal selectors */
+p,
+h1,
+h2 {
+  font-family: "Roboto";
+  font-size: 15px;
+}
+html {
+  scroll-behavior: smooth;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+.white-text {
+  color: white;
+}
+.strong-text {
+  font-weight: bolder;
+}
+.p-universal {
+  padding: 0 4%;
+}
+/* navigation bar */
+.logo {
+  margin: 4% 0;
+}
+.menu {
+  display: none;
+}
+.disabled {
+  cursor: not-allowed;
+}
+/* main page */
+.main-slogan-1 {
+  width: 80%;
+  font-size: x-large;
+}
+.main-slogan-2 {
+  width: 60%;
+  font-size: small;
+}
+.button {
+  width: 100px;
+  aspect-ratio: 6/2;
+  border: 3px solid white;
+  color: white;
+  background-color: unset;
+}
+/* about page */
+.about-slogan {
+  width: 100%;
+  margin: 10% 0;
+  color: #08073b;
+  font-size: x-large;
+}
+.employees {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.portrait {
+  padding: 29%;
+  border-radius: 100%;
+  margin: 15%;
+}
+.img1 {
+  background: url(./birmingham-museums-trust-Kv1hYl9LlxU-unsplash-imresizer.jpg)
+    center/contain no-repeat;
+}
+.img2 {
+  background: url(./birmingham-museums-trust-zTJX8ObJdp4-unsplash-imresizer.jpg)
+    center/contain no-repeat;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.credentials {
+  font-weight: bolder;
+}
+.cv {
+  text-align: justify;
+}
+/* offer page */
+.offer-slogan {
+  width: 100%;
+  margin: 10% 0;
+  font-size: larger;
+  text-align: center;
+}
+.services-box {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15%;
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 3vh;
+}
+.service {
+  width: 75%;
+  aspect-ratio: 50/50;
+  background-color: white;
+  box-shadow: 3px 3px 6px -1px rgba(0, 0, 0, 0.82);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service-pos-rel {
+  position: relative;
+}
+.shape-design {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  border-radius: 171px;
+  background-color: #f67e1d;
+}
+.text {
+  color: black;
+  text-align: center;
+}
+/* footer bar */
+.copyright-text {
+  margin: 5% 0;
+  text-align: center;
+}
+.icons {
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+/* web pages with id selector */
+#navigation,
+#copyright {
+  background-color: #595856;
+  display: flex;
+  align-items: center;
+}
+#copyright {
+  flex-direction: column;
+  justify-content: center;
+}
+#main {
+  height: 100%;
+  background: url("./dan-otis-OYFHT4X5isg-unsplash-imresizer.jpg") center/100%
+    100% no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+#about {
+  height: auto;
+  background-color: #f0f0f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#offer {
+  background-color: #154172;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* RWD_tablet_768 */
+@media screen and (min-width: 768px) {
+  /* menu bar */
+  .logo {
+    padding: 10px;
+    margin: unset;
+    padding-left: unset;
+  }
+  /* main page */
+  .main-slogan-1 {
+    width: auto;
+    font-size: x-large;
+  }
+  .main-slogan-2 {
+    width: auto;
+    font-size: medium;
+  }
+  .button {
+    width: 135px;
+  }
+  /* about page */
+  .about-slogan {
+    font-size: xx-large;
+    margin: 5% 0;
+  }
+  .employees {
+    flex-wrap: nowrap;
+  }
+  .portrait {
+    padding: 11%;
+    margin: 2% 2%;
+  }
+  .portrait.img1 {
+    margin-left: unset;
+  }
+  .portrait.img2 {
+    margin-right: unset;
+  }
+  /* offer page */
+  .offer-slogan {
+    width: 50%;
+    margin: 5% 0;
+    font-size: x-large;
+    text-align: start;
+  }
+  .services-box {
+    flex-direction: unset;
+    align-self: center;
+    margin: 4% 12%;
+    row-gap: unset;
+  }
+  .service {
+    width: 30%;
+    margin: 1%;
+  }
+  /* footer page */
+  .copyright-text {
+    font-size: 17px;
+    margin: unset;
+  }
+  .icons {
+    margin-bottom: unset;
+    gap: 15px;
+  }
+  /* pseudo-classes */
+  .employees:nth-of-type(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  /* web pages with id selector */
+  #about,
+  #offer {
+    flex-direction: unset;
+    justify-content: unset;
+  }
+  #copyright {
+    padding: 2% 4%;
+    flex-direction: unset;
+    justify-content: space-between;
+  }
+}
+/* RWD_desktop_1024 */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  /* menu_bar */
+  .menu {
+    display: flex;
+    gap: 50px;
+  }
+  /* main page*/
+  .button {
+    transition-timing-function: linear;
+    transition-duration: 1s;
+  }
+  .credentials {
+    font-weight: 1000;
+  }
+  /* offer page */
+  .offer-slogan {
+    font-size: xx-large;
+  }
+  .services-box {
+    margin-top: unset;
+  }
+  .service {
+    flex-wrap: wrap;
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: 0.5s;
+    position: relative;
+  }
+  /* paddings */
+  .p-universal {
+    padding: 0 7%;
+  }
+  /* pseudo-classes */
+  .button:hover {
+    background-color: white;
+    color: black;
+  }
+  .service:hover {
+    transform: scale(1.05);
+  }
+  /* web pages with id selector */
+  #copyright {
+    padding: 1.5% 7%;
+  }
+  #navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+}
